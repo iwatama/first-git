@@ -1,0 +1,2 @@
+class Messagetest < ApplicationRecord
+end
