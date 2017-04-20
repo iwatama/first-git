@@ -5,3 +5,7 @@
     <p>
         <%= message.content %>
     </p>
+    <%= link_to 'back to list', messages_path %>
+    <%= link_to 'update message', edit_message_path(@message) %>
+    <%= link_to 'delete message',@message,method: :delete, data:{confirm:'本当に削除してよろしいですか'} %>
+
