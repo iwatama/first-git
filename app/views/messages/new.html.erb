@@ -1,0 +1,13 @@
+<h1>message new</h1>
+    <%= form_for(@message) do |f| %>
+    <%= f.label :content, 'メッセージ' %>
+    <%= f.text_field :content %>
+
+    <%= f.submit 'toukou' %>
+ <% end %>
+
+
+    <%= link_to 'back to list', messages_path %>
+    <%= message.content %>
+
+</ul>
