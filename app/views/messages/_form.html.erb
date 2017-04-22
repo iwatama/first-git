@@ -1,7 +1,7 @@
 <%= form_for(message) do |f| %>
 
     <% if message.errors.any? %>
-    <div id = "error_explation">
+    <div class = "alert alert-warning">
         <ul>
             <% message.errors.full_messages.each do |message| %>
                 <li>
@@ -12,7 +12,8 @@
     </div>
     <% end %>
 
-    <%= f.label :title, 'titledesu' %><%= f.text_field :title %>
-    <%= f.label :content, 'メッセージ' %><%= f.text_field :content %>
+    <%= f.label :title, 'titledesu' %><%= f.text_field :title, class:'form-control' %>
+    <%= f.label :content, 'メッセージ' %><%= f.text_field :content , class:"form-control" %>
+    
     <%= f.submit 'toukou_kyoutsuka' %>
  <% end %>
