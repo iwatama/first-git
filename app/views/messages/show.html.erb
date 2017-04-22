@@ -1,9 +1,9 @@
 <h1>id=
-    <% @message.id %>
+    <%= @message.id %>
     の詳細ページ
 </h1>
     <p>
-        <%= message.content %>
+        <%= @message.content %>
     </p>
     <%= link_to 'back to list', messages_path %>
     <%= link_to 'update message', edit_message_path(@message) %>
